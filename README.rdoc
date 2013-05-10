@@ -1,6 +1,21 @@
-= vagrant-http-basic-authentication
+= Vagrant HTTP Basic Authentication
 
-Description goes here.
+This Vagrant plugin allows user to define box urls that use HTTP Basic Authentication.
+
+== Install
+
+```
+vagrant plugin install vagrant-http-basic-authentication
+```
+
+== Usage
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "my_box"
+  config.vm.box_url = "http://server.com/my_box.box".with_basic_authentication
+end
+```
 
 == Contributing to vagrant-http-basic-authentication
  
