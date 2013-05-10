@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "vagrant-http-basic-authentication"
   gem.homepage = "http://github.com/igorbonadio/vagrant-http-basic-authentication"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{This Vagrant plugin allows user to define box urls that use HTTP Basic Authentication}
+  gem.description = %Q{This Vagrant plugin allows user to define box urls that use HTTP Basic Authentication}
   gem.email = "igorbonadio@gmail.com"
   gem.authors = ["Ígor Bonadio"]
   # dependencies defined in Gemfile
