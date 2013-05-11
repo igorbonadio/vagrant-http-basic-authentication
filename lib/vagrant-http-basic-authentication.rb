@@ -1,5 +1,8 @@
 require 'io/console'
 
+$stdout.sync = true
+$stdin.sync = true
+
 module VagrantPlugins
   module HttpBasicAuthentication
     class HttpBasicAuthentication < Vagrant.plugin("2")
@@ -15,6 +18,7 @@ class String
       $stdout.puts "#{self} needs authentication"
       $stdout.print "login: "
       user = $stdin.gets.chomp
+      $stdout.print "password: "
       password = $stdin.noecho(&:gets).chomp
       "#{u[0]}://#{user}:#{password}@#{u[1]}"
     end
