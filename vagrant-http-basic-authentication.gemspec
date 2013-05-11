@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "vagrant-http-basic-authentication"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["\u{cd}gor Bonadio"]
-  s.date = "2013-05-10"
+  s.date = "2013-05-11"
   s.description = "This Vagrant plugin allows user to define box urls that use HTTP Basic Authentication"
   s.email = "igorbonadio@gmail.com"
   s.extra_rdoc_files = [
@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/vagrant-http-basic-authentication.rb",
     "spec/spec_helper.rb",
-    "spec/vagrant-http-basic-authentication_spec.rb"
+    "spec/vagrant-http-basic-authentication_spec.rb",
+    "vagrant-http-basic-authentication.gemspec"
   ]
   s.homepage = "http://github.com/igorbonadio/vagrant-http-basic-authentication"
   s.licenses = ["MIT"]
